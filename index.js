@@ -14,11 +14,7 @@ const server = express();
 const router = express.Router();
 
 // ROUTES
-router.get('/', (req,res) => {
-    res.send('This is my back end');
-    console.log(req);
-    console.log(res);
-});
+
 
 
 //Middlewares
@@ -29,7 +25,7 @@ server.use(express.urlencoded({extended:true}))
 server.use("/", router);
 //server.use('/users', userRoutes);
 
-router.get('/users',  (req,res) => {
+router.get('/',  (req,res) => {
     return User.find()
     .then(users => {
         //Returning the list of the users
