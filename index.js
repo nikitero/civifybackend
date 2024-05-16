@@ -13,29 +13,21 @@ const PORT = 3000;
 const server = express();
 const router = express.Router();
 
-// ROUTES
-
-
-
 //Middlewares
 server.use(express.json())
 server.use(express.urlencoded({extended:true}))
+server.use("/", router)
+
+// ROUTES
+router.get('/', (req,res) => {
+    res.send('This is my back end');
+    console.log(req);
+    console.log(res);
+});
 
 //Routes
 server.use("/", router);
-//server.use('/users', userRoutes);
-
-router.get('/',  (req,res) => {
-    return User.find()
-    .then(users => {
-        //Returning the list of the users
-        console.log(users);
-        return res.status(200).json(users);
-    })
-    .catch(err => {
-        return res.status(500).json(err);
-    });
-});
+server.use('/users', userRoutes);
 
 
 //Server
