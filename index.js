@@ -24,11 +24,22 @@ router.get('/', (req,res) => {
 //Middlewares
 server.use(express.json())
 server.use(express.urlencoded({extended:true}))
-server.use("/", router);
 
 //Routes
 server.use("/", router);
-server.use('/users', userRoutes);
+//server.use('/users', userRoutes);
+
+router.get('/users',  (req,res) => {
+    return User.find()
+    .then(users => {
+        //Returning the list of the users
+        console.log(users);
+        return res.status(200).json(users);
+    })
+    .catch(err => {
+        return res.status(500).json(err);
+    });
+});
 
 
 //Server
