@@ -13,6 +13,12 @@ const PORT = 3000;
 const server = express();
 const router = express.Router();
 
+// ROUTES
+router.get('/', (req,res) => {
+    res.send('This is my back end');
+    console.log(req);
+    console.log(res);
+});
 
 
 //Middlewares
