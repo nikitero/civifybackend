@@ -20,17 +20,16 @@ router.get('/', (req,res) => {
     console.log(res);
 });
 
-//Routes
-server.use("/", router);
-server.use('/users', userRoutes);
-
-
-
 
 //Middlewares
 server.use(express.json())
 server.use(express.urlencoded({extended:true}))
 server.use("/", router);
+
+//Routes
+server.use("/", router);
+server.use('/users', userRoutes);
+
 
 //Server
 server.listen(PORT, () => {
