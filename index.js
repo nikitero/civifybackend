@@ -11,7 +11,6 @@ require('dotenv').config();
 //Utils
 const {connect} = require('./utils/db')
 
-
 //Requiring routes
 const userRoutes = require('./routes/user.routes');
 //const loggedUserRoutes = require('./routes/loggedUser.routes');
