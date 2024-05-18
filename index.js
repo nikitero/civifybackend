@@ -1,6 +1,7 @@
 const express = require("express");
 const User = require('./models/User');
 const path = require('path');
+require('dotenv').config();
 
 //Utils
 const {connect} = require('./utils/db');
@@ -9,7 +10,7 @@ const {connect} = require('./utils/db');
 const userRoutes = require('./routes/user.routes');
 
 //Server config
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const server = express();
 const router = express.Router();
 
