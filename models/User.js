@@ -13,7 +13,16 @@ const userSchema = new Schema(
     age:{ type: Number },
     nationality:{ type: String, required: true },
     phoneNumber:{ type: String, required: true },
-    picture: { type: String }
+    picture: { type: String },
+    education: [
+      {
+        institution: { type: String },
+        area: { type: String },
+        startDate: { type: String },
+        endDate: { type: String },
+        location: { type: String },
+      }
+    ]
   },
   {
     // Esta propiedad servirá para guardar las fechas de creación y actualización de los documentos

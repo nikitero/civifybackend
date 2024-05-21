@@ -9,13 +9,29 @@ const { DB_URL } = require('../utils/db.js')
 const userList = [
   {
     name: 'Nikita',
-    surname:'Vasiljevs Voroziscev TEST',
-    passport:'433',
-    dni:'Y0781514B',
-    age: 32,
-    nationality: 'Letonia',
+    surname:'Vasiljevs Voroziscev',
+    passport:'',
+    dni:'',
+    age: 33,
+    nationality: 'Spain',
     phoneNumber:'622529583',
-    picture:''
+    picture:'',
+    education: [
+      {
+        institution: 'Universidad de Salamanca',
+        area: 'History of Art',
+        startDate: '01/01/2009',
+        endDate: '01/01/2015',
+        location: 'Salamanca',
+      },
+      {
+        institution: 'Mikhail Lomonosov Secondary School',
+        area: '',
+        startDate: '01/01/1996',
+        endDate: '30/05/2009',
+        location: 'Riga',
+      }
+    ]
   }
 ];
 
