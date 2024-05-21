@@ -8,16 +8,34 @@ const userSchema = new Schema(
   {
     name:{ type: String, required: true },
     surname:{ type: String, required: true },
-    passport:{ type: String, required: false, unique:true },
     dni:{ type: String, required: false },
     age:{ type: Number },
     nationality:{ type: String, required: true },
     phoneNumber:{ type: String, required: true },
+    email: { type: String, required: true },
     picture: { type: String },
     education: [
       {
         institution: { type: String },
         area: { type: String },
+        startDate: { type: String },
+        endDate: { type: String },
+        location: { type: String },
+      }
+    ],
+    courses: [
+      {
+        institution: { type: String },
+        area: { type: String },
+        startDate: { type: String },
+        endDate: { type: String },
+        location: { type: String },
+      }
+    ],
+    jobExperience: [
+      {
+        company: { type: String },
+        position: { type: String },
         startDate: { type: String },
         endDate: { type: String },
         location: { type: String },

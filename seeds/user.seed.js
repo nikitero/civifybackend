@@ -10,11 +10,11 @@ const userList = [
   {
     name: 'Nikita',
     surname:'Vasiljevs Voroziscev',
-    passport:'',
     dni:'',
     age: 33,
     nationality: 'Spain',
     phoneNumber:'622529583',
+    email: 'nikitavasiljevs@gmail.com',
     picture:'',
     education: [
       {
@@ -30,6 +30,24 @@ const userList = [
         startDate: '01/01/1996',
         endDate: '30/05/2009',
         location: 'Riga',
+      }
+    ],
+    courses: [
+      {
+        institution: 'UpgradeHub',
+        area: 'Full Stack Development',
+        startDate: '25/09/2022',
+        endDate: '05/05/2023',
+        location: 'Madrid',
+      }
+    ],
+    jobExperience: [
+      {
+        company: 'StubHub Internation',
+        position: 'Technical Support Specialist',
+        startDate: '15/07/2015',
+        endDate: '26/04/2024',
+        location: 'Madrid',
       }
     ]
   }
