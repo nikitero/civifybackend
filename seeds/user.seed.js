@@ -43,9 +43,23 @@ const userList = [
     ],
     jobExperience: [
       {
+        company: 'Starlims',
+        position: 'Technical Support Specialist',
+        startDate: '01/05/2024',
+        endDate: '01/11/2024',
+        location: 'Madrid',
+      },
+      {
+        company: 'StubHub International',
+        position: 'QA Tester',
+        startDate: '01/01/2024',
+        endDate: '26/04/2024',
+        location: 'Madrid',
+      },
+      {
         company: 'StubHub Internation',
         position: 'Technical Support Specialist',
-        startDate: '15/07/2015',
+        startDate: '01/01/2024',
         endDate: '26/04/2024',
         location: 'Madrid',
       }

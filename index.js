@@ -1,5 +1,5 @@
 const express = require("express");
-const logError = require('./utils/log');//Gestión de errores
+const logError = require('./utils/log');
 const User = require('./models/User');
 //const logUs = require('./models/LoggedUser')
 const path = require('path');

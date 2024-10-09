@@ -11,7 +11,6 @@ const router = express.Router();
 router.get('/',  (req,res) => {
     return User.find()
     .then(users => {
-        //Returning the list of the users
         console.log(users);
         return res.status(200).json(users);
     })
@@ -31,7 +30,7 @@ router.get('/:id', (req,res) => {
         console.log(user);
         return res.status(200).json(user);
     } else {
-        return res.status(404).json('No character found by the provided id')
+        return res.status(404).json('No user found by the provided id')
     }
     })
     .catch(err => {
@@ -49,7 +48,7 @@ router.get('/dni/:dni', (req,res) => {
         console.log(user);
         return res.status(200).json(user);
     } else {
-        return res.status(404).json('No character found by the provided dni')
+        return res.status(404).json('No user found by the provided dni')
     }
     })
     .catch(err => {
