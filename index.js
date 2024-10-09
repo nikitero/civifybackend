@@ -1,5 +1,6 @@
 const express = require("express");
 const logError = require('./utils/log');
+const cors = require('cors');
 const User = require('./models/User');
 //const logUs = require('./models/LoggedUser')
 const path = require('path');
@@ -10,6 +11,8 @@ require('dotenv').config();
 
 //Utils
 const {connect} = require('./utils/db')
+
+
 
 //Requiring routes
 const userRoutes = require('./routes/user.routes');
@@ -23,6 +26,7 @@ const router = express.Router();
 
 
 //Middlewares
+server.use(cors());
 server.use(express.json())
 server.use(express.urlencoded({extended:true}))
 server.use("/", router)
