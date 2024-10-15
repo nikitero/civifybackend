@@ -13,7 +13,9 @@ const userSchema = new Schema(
     nationality:{ type: String, required: true },
     phoneNumber:{ type: String, required: true },
     email: { type: String, required: true },
+    address: { type: String },
     picture: { type: String },
+    linkedinUrl: { type: String },
     education: [
       {
         institution: { type: String },
@@ -27,8 +29,7 @@ const userSchema = new Schema(
       {
         institution: { type: String },
         area: { type: String },
-        startDate: { type: String },
-        endDate: { type: String },
+        duration: { type: String },
         location: { type: String },
       }
     ],
@@ -36,6 +37,8 @@ const userSchema = new Schema(
       {
         company: { type: String },
         position: { type: String },
+        jobDesc: { type: String },
+        tools: { type: String },
         startDate: { type: String },
         endDate: { type: String },
         location: { type: String },

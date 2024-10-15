@@ -15,8 +15,17 @@ const userList = [
     nationality: 'Spain',
     phoneNumber:'622529583',
     email: 'nikitavasiljevs@gmail.com',
+    address: 'Avenida de Orovilla 44, Madrid, 28041, Spain',
     picture:'',
+    linkedinUrl: 'https://www.linkedin.com/in/nikita-vasiljevs/',
     education: [
+      {
+        institution: 'UpgradeHub',
+        area: 'Full Stack Development',
+        startDate: '25/09/2022',
+        endDate: '05/05/2023',
+        location: 'Madrid',
+      },
       {
         institution: 'Universidad de Salamanca',
         area: 'History of Art',
@@ -34,17 +43,17 @@ const userList = [
     ],
     courses: [
       {
-        institution: 'UpgradeHub',
-        area: 'Full Stack Development',
-        startDate: '25/09/2022',
-        endDate: '05/05/2023',
-        location: 'Madrid',
+        institution: 'Adams - Training Center',
+        area: 'SQL Basics',
+        duration: '25/09/2022',
+        location: 'Madrid'
       }
     ],
     jobExperience: [
       {
         company: 'Starlims',
         position: 'Technical Support Specialist',
+        jobDesc: 'Managing and resolving Level 1 and Level 2 technical incidents, ensuring all tickets are reviewed and resolved within the established SLAs',
         startDate: '01/05/2024',
         endDate: '01/11/2024',
         location: 'Madrid',
@@ -52,13 +61,15 @@ const userList = [
       {
         company: 'StubHub International',
         position: 'QA Tester',
+        jobDesc: 'Developing test plans for the web and native applications. Reporting and documenting bugs using Jira. Creating automated E2E tests with Selenium Grid (Web Driver IO).',
         startDate: '01/01/2024',
         endDate: '26/04/2024',
         location: 'Madrid',
       },
       {
         company: 'StubHub Internation',
-        position: 'Technical Support Specialist',
+        position: 'Technical Incident Analyst',
+        jobDesc: 'Receiving, analyzing, and documenting bugs reported by stakeholders. Coordinating with Product and Development teams to escalate, prioritize, and ensure timely resolution.',
         startDate: '01/01/2024',
         endDate: '26/04/2024',
         location: 'Madrid',
